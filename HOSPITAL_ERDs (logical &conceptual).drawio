@@ -1,0 +1,1638 @@
+<mxfile host="Electron" pages="4">
+  <diagram name="Conceptual" id="NvZWE4NrHE5jEnrsZ3qH">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;erDiagram\n PATIENTS ||--o{ ADMISSIONS : has\n STAFF ||--o{ ADMISSIONS : attends\n DIAGNOSIS_GROUPS ||--o{ ADMISSIONS : classifies\n ADMISSIONS ||--o{ ADMISSION_TREATMENTS : receives\n TREATMENTS ||--o{ ADMISSION_TREATMENTS : catalogues\n STAFF ||--o{ ADMISSION_TREATMENTS : performs\n ADMISSIONS ||--o{ PRESCRIPTIONS : includes\n MEDICATIONS ||--o{ PRESCRIPTIONS : identifies\n STAFF ||--o{ PRESCRIPTIONS : prescribes\n PATIENTS ||--o{ APPOINTMENTS : books\n STAFF ||--o{ APPOINTMENTS : conducts\n STAFF ||--o{ STAFF : \&quot;manages\&quot;\n\n&quot;,&#xa;  &quot;config&quot;: null,&#xa;  &quot;version&quot;: &quot;12&quot;&#xa;}" id="ITV9sUxBmIxfNsXkl3dd-1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PATIENTS" mermaidId="n:PATIENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FDF4FF;strokeColor=#E879F9;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="PATIENTS" id="WQXZrmlYA7Evn36cqRBk-64">
+          <mxCell parent="ITV9sUxBmIxfNsXkl3dd-1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FDF4FF;strokeColor=#E879F9;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="104" x="305" y="110" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ADMISSIONS" mermaidId="n:ADMISSIONS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="ADMISSIONS" id="WQXZrmlYA7Evn36cqRBk-65">
+          <mxCell parent="ITV9sUxBmIxfNsXkl3dd-1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="126" x="195" y="312" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="STAFF" mermaidId="n:STAFF" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="STAFF" id="WQXZrmlYA7Evn36cqRBk-66">
+          <mxCell parent="ITV9sUxBmIxfNsXkl3dd-1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="100" x="549" y="110" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="DIAGNOSIS_GROUPS" mermaidId="n:DIAGNOSIS_GROUPS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#ECFEFF;strokeColor=#22D3EE;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="DIAGNOSIS_GROUPS" id="WQXZrmlYA7Evn36cqRBk-67">
+          <mxCell parent="ITV9sUxBmIxfNsXkl3dd-1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#ECFEFF;strokeColor=#22D3EE;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="160" x="96" y="110" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ADMISSION_TREATMENTS" mermaidId="n:ADMISSION_TREATMENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#F0FDF4;strokeColor=#4ADE80;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="ADMISSION_TREATMENTS" id="WQXZrmlYA7Evn36cqRBk-68">
+          <mxCell parent="ITV9sUxBmIxfNsXkl3dd-1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#F0FDF4;strokeColor=#4ADE80;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="160" x="134" y="534" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TREATMENTS" mermaidId="n:TREATMENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F5F3FF;strokeColor=#A78BFA;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="TREATMENTS" id="WQXZrmlYA7Evn36cqRBk-69">
+          <mxCell parent="ITV9sUxBmIxfNsXkl3dd-1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F5F3FF;strokeColor=#A78BFA;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="125" x="30" y="312" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PRESCRIPTIONS" mermaidId="n:PRESCRIPTIONS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEF2F2;strokeColor=#F87171;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="PRESCRIPTIONS" id="WQXZrmlYA7Evn36cqRBk-70">
+          <mxCell parent="ITV9sUxBmIxfNsXkl3dd-1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEF2F2;strokeColor=#F87171;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="146" x="720" y="534" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="MEDICATIONS" mermaidId="n:MEDICATIONS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEFCE8;strokeColor=#FACC15;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="MEDICATIONS" id="WQXZrmlYA7Evn36cqRBk-71">
+          <mxCell parent="ITV9sUxBmIxfNsXkl3dd-1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEFCE8;strokeColor=#FACC15;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="132" x="702" y="312" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="APPOINTMENTS" mermaidId="n:APPOINTMENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#EEF2FF;strokeColor=#818CF8;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="APPOINTMENTS" id="WQXZrmlYA7Evn36cqRBk-72">
+          <mxCell parent="ITV9sUxBmIxfNsXkl3dd-1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#EEF2FF;strokeColor=#818CF8;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="143" x="416" y="312" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="has" mermaidId="e:PATIENTS-&gt;ADMISSIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="has" id="WQXZrmlYA7Evn36cqRBk-73">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-64" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-65">
+            <mxGeometry relative="1" x="0.4104750304506699" as="geometry">
+              <Array as="points">
+                <mxPoint x="343" y="211" />
+                <mxPoint x="258" y="211" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="attends" mermaidId="e:STAFF-&gt;ADMISSIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.26;exitY=1;entryX=0.71;entryY=0;" mermaidBaseValue="attends" id="WQXZrmlYA7Evn36cqRBk-74">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-66" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.26;exitY=1;entryX=0.71;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-65">
+            <mxGeometry relative="1" x="0.2231003039513677" as="geometry">
+              <Array as="points">
+                <mxPoint x="575" y="211" />
+                <mxPoint x="384" y="211" />
+                <mxPoint x="384" y="292" />
+                <mxPoint x="285" y="292" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="classifies" mermaidId="e:DIAGNOSIS_GROUPS-&gt;ADMISSIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.29;entryY=0;" mermaidBaseValue="classifies" id="WQXZrmlYA7Evn36cqRBk-75">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-67" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.29;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-65">
+            <mxGeometry relative="1" x="-0.3173483779971791" as="geometry">
+              <Array as="points">
+                <mxPoint x="176" y="292" />
+                <mxPoint x="232" y="292" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="receives" mermaidId="e:ADMISSIONS-&gt;ADMISSION_TREATMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="receives" id="WQXZrmlYA7Evn36cqRBk-76">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-65" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-68">
+            <mxGeometry relative="1" x="-0.16113039167079812" as="geometry">
+              <Array as="points">
+                <mxPoint x="241" y="494" />
+                <mxPoint x="214" y="494" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="catalogues" mermaidId="e:TREATMENTS-&gt;ADMISSION_TREATMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.28;entryY=0;" mermaidBaseValue="catalogues" id="WQXZrmlYA7Evn36cqRBk-77">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-69" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.28;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-68">
+            <mxGeometry relative="1" x="-0.37885462555066074" as="geometry">
+              <Array as="points">
+                <mxPoint x="93" y="494" />
+                <mxPoint x="179" y="494" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="performs" mermaidId="e:STAFF-&gt;ADMISSION_TREATMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.58;exitY=1;entryX=0.72;entryY=0;" mermaidBaseValue="performs" id="WQXZrmlYA7Evn36cqRBk-78">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-66" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.58;exitY=1;entryX=0.72;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-68">
+            <mxGeometry relative="1" x="-0.47863818424566085" as="geometry">
+              <Array as="points">
+                <mxPoint x="607" y="231" />
+                <mxPoint x="631" y="231" />
+                <mxPoint x="631" y="262" />
+                <mxPoint x="631" y="413" />
+                <mxPoint x="628" y="413" />
+                <mxPoint x="628" y="464" />
+                <mxPoint x="628" y="514" />
+                <mxPoint x="249" y="514" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="includes" mermaidId="e:ADMISSIONS-&gt;PRESCRIPTIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.64;exitY=1;entryX=0.29;entryY=0;" mermaidBaseValue="includes" id="WQXZrmlYA7Evn36cqRBk-79">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-65" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.64;exitY=1;entryX=0.29;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-70">
+            <mxGeometry relative="1" x="0.5158202605689977" as="geometry">
+              <Array as="points">
+                <mxPoint x="276" y="433" />
+                <mxPoint x="681" y="433" />
+                <mxPoint x="681" y="514" />
+                <mxPoint x="762" y="514" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="identifies" mermaidId="e:MEDICATIONS-&gt;PRESCRIPTIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="identifies" id="WQXZrmlYA7Evn36cqRBk-80">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-71" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-70">
+            <mxGeometry relative="1" x="-0.1506024096385542" as="geometry">
+              <Array as="points">
+                <mxPoint x="768" y="494" />
+                <mxPoint x="793" y="494" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="prescribes" mermaidId="e:STAFF-&gt;PRESCRIPTIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.74;exitY=1;entryX=0.72;entryY=0;" mermaidBaseValue="prescribes" id="WQXZrmlYA7Evn36cqRBk-81">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-66" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.74;exitY=1;entryX=0.72;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-70">
+            <mxGeometry relative="1" x="0.28147889780258106" as="geometry">
+              <Array as="points">
+                <mxPoint x="623" y="211" />
+                <mxPoint x="911" y="211" />
+                <mxPoint x="911" y="262" />
+                <mxPoint x="911" y="464" />
+                <mxPoint x="911" y="494" />
+                <mxPoint x="825" y="494" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="books" mermaidId="e:PATIENTS-&gt;APPOINTMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.63;exitY=1;entryX=0.36;entryY=0;" mermaidBaseValue="books" id="WQXZrmlYA7Evn36cqRBk-82">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-64" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.63;exitY=1;entryX=0.36;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-72">
+            <mxGeometry relative="1" x="0.44431687715269796" as="geometry">
+              <Array as="points">
+                <mxPoint x="371" y="231" />
+                <mxPoint x="467" y="231" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="conducts" mermaidId="e:STAFF-&gt;APPOINTMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.42;exitY=1;entryX=0.65;entryY=0;" mermaidBaseValue="conducts" id="WQXZrmlYA7Evn36cqRBk-83">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-66" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.42;exitY=1;entryX=0.65;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-72">
+            <mxGeometry relative="1" x="0.09202453987730053" as="geometry">
+              <Array as="points">
+                <mxPoint x="591" y="231" />
+                <mxPoint x="540" y="231" />
+                <mxPoint x="540" y="292" />
+                <mxPoint x="508" y="292" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="manages" mermaidId="e:STAFF-&gt;STAFF#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0;exitY=0.38;entryX=0;entryY=0.62;" mermaidBaseValue="manages" id="WQXZrmlYA7Evn36cqRBk-84">
+          <mxCell edge="1" parent="ITV9sUxBmIxfNsXkl3dd-1" source="WQXZrmlYA7Evn36cqRBk-66" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0;exitY=0.38;entryX=0;entryY=0.62;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="WQXZrmlYA7Evn36cqRBk-66">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="529" y="141" />
+                <mxPoint x="529" y="160" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Logical ERD" id="m9tu5B0UhxNcTqmGwJd3">
+    <mxGraphModel dx="2194" dy="2719" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="OxUsx--4gWSUSQ9xe3zu-0" />
+        <mxCell id="OxUsx--4gWSUSQ9xe3zu-1" parent="OxUsx--4gWSUSQ9xe3zu-0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;erDiagram\n PATIENTS ||--o{ ADMISSIONS : has\n STAFF ||--o{ ADMISSIONS : attends\n DIAGNOSIS_GROUPS ||--o{ ADMISSIONS : classifies\n ADMISSIONS ||--o{ ADMISSION_TREATMENTS : receives\n TREATMENTS ||--o{ ADMISSION_TREATMENTS : catalogues\n STAFF ||--o{ ADMISSION_TREATMENTS : performs\n ADMISSIONS ||--o{ PRESCRIPTIONS : includes\n MEDICATIONS ||--o{ PRESCRIPTIONS : identifies\n STAFF ||--o{ PRESCRIPTIONS : prescribes\n PATIENTS ||--o{ APPOINTMENTS : books\n STAFF ||--o{ APPOINTMENTS : conducts\n STAFF ||--o{ STAFF : \&quot;manages\&quot;\n\n&quot;,&#xa;  &quot;config&quot;: null,&#xa;  &quot;version&quot;: &quot;12&quot;&#xa;}" id="OxUsx--4gWSUSQ9xe3zu-2">
+          <mxCell connectable="0" parent="OxUsx--4gWSUSQ9xe3zu-1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="&lt;font style=&quot;font-size: 12px;&quot;&gt;PATIENTS&lt;/font&gt;" mermaidId="n:PATIENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FDF4FF;strokeColor=#E879F9;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="PATIENTS" id="OxUsx--4gWSUSQ9xe3zu-3">
+          <mxCell parent="OxUsx--4gWSUSQ9xe3zu-2" style="shape=table;startSize=42;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FDF4FF;strokeColor=#E879F9;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="245" width="143" x="380" y="-790" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-20" parent="OxUsx--4gWSUSQ9xe3zu-3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="29" width="143" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-26" parent="DcKOSu15UjOfGYppWeHd-20" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;PK&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-21" parent="DcKOSu15UjOfGYppWeHd-20" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;patient_id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="103" x="40" as="geometry">
+            <mxRectangle height="29" width="103" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-37" parent="OxUsx--4gWSUSQ9xe3zu-3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="143" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-38" parent="DcKOSu15UjOfGYppWeHd-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;rowspan=6;colspan=1;" vertex="1">
+          <mxGeometry height="174" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-39" parent="DcKOSu15UjOfGYppWeHd-37" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="hospital_number" vertex="1">
+          <mxGeometry height="29" width="103" x="40" as="geometry">
+            <mxRectangle height="29" width="103" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-34" parent="OxUsx--4gWSUSQ9xe3zu-3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="143" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-35" parent="DcKOSu15UjOfGYppWeHd-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-36" parent="DcKOSu15UjOfGYppWeHd-34" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="given_name" vertex="1">
+          <mxGeometry height="29" width="103" x="40" as="geometry">
+            <mxRectangle height="29" width="103" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-31" parent="OxUsx--4gWSUSQ9xe3zu-3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="143" y="129" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-32" parent="DcKOSu15UjOfGYppWeHd-31" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-33" parent="DcKOSu15UjOfGYppWeHd-31" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="date_of_birth" vertex="1">
+          <mxGeometry height="29" width="103" x="40" as="geometry">
+            <mxRectangle height="29" width="103" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-28" parent="OxUsx--4gWSUSQ9xe3zu-3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="143" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-29" parent="DcKOSu15UjOfGYppWeHd-28" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-30" parent="DcKOSu15UjOfGYppWeHd-28" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="sex" vertex="1">
+          <mxGeometry height="29" width="103" x="40" as="geometry">
+            <mxRectangle height="29" width="103" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-22" parent="OxUsx--4gWSUSQ9xe3zu-3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="143" y="187" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-27" parent="DcKOSu15UjOfGYppWeHd-22" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-23" parent="DcKOSu15UjOfGYppWeHd-22" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="postcode_area" vertex="1">
+          <mxGeometry height="29" width="103" x="40" as="geometry">
+            <mxRectangle height="29" width="103" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-43" parent="OxUsx--4gWSUSQ9xe3zu-3" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="143" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-44" parent="DcKOSu15UjOfGYppWeHd-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-45" parent="DcKOSu15UjOfGYppWeHd-43" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="registered_at" vertex="1">
+          <mxGeometry height="29" width="103" x="40" as="geometry">
+            <mxRectangle height="29" width="103" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;font style=&quot;font-size: 12px;&quot;&gt;ADMISSIONS&lt;/font&gt;" mermaidId="n:ADMISSIONS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="ADMISSIONS" id="OxUsx--4gWSUSQ9xe3zu-4">
+          <mxCell parent="OxUsx--4gWSUSQ9xe3zu-2" style="shape=table;startSize=40;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="330" width="160" x="270" y="-320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-61" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-62" parent="DcKOSu15UjOfGYppWeHd-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="PK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-63" parent="DcKOSu15UjOfGYppWeHd-61" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="admission_id" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-55" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="29" width="160" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-56" parent="DcKOSu15UjOfGYppWeHd-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-57" parent="DcKOSu15UjOfGYppWeHd-55" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="patient_id" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-58" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-59" parent="DcKOSu15UjOfGYppWeHd-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-60" parent="DcKOSu15UjOfGYppWeHd-58" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="attending_staff_id" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-64" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-65" parent="DcKOSu15UjOfGYppWeHd-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-66" parent="DcKOSu15UjOfGYppWeHd-64" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="diagnosis_group_id" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-67" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-68" parent="DcKOSu15UjOfGYppWeHd-67" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;rowspan=6;colspan=1;" vertex="1">
+          <mxGeometry height="174" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-69" parent="DcKOSu15UjOfGYppWeHd-67" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="admitted_at" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-70" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-71" parent="DcKOSu15UjOfGYppWeHd-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-72" parent="DcKOSu15UjOfGYppWeHd-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="discharged_at" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-73" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-74" parent="DcKOSu15UjOfGYppWeHd-73" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-75" parent="DcKOSu15UjOfGYppWeHd-73" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="admission_type" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-76" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="243" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-77" parent="DcKOSu15UjOfGYppWeHd-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-78" parent="DcKOSu15UjOfGYppWeHd-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="discharge_status" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-79" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="272" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-80" parent="DcKOSu15UjOfGYppWeHd-79" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-81" parent="DcKOSu15UjOfGYppWeHd-79" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="total_cost" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-82" parent="OxUsx--4gWSUSQ9xe3zu-4" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="301" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-83" parent="DcKOSu15UjOfGYppWeHd-82" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-84" parent="DcKOSu15UjOfGYppWeHd-82" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="clinical_notes" vertex="1">
+          <mxGeometry height="29" width="120" x="40" as="geometry">
+            <mxRectangle height="29" width="120" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;font style=&quot;font-size: 12px;&quot;&gt;STAFF&lt;/font&gt;" mermaidId="n:STAFF" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="STAFF" id="OxUsx--4gWSUSQ9xe3zu-5">
+          <mxCell parent="OxUsx--4gWSUSQ9xe3zu-2" style="shape=table;startSize=42;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="245" width="220" x="560" y="-790" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="FDHTR0U0ryr0YxQ1Dqrr-8" parent="OxUsx--4gWSUSQ9xe3zu-5" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="29" width="220" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="FDHTR0U0ryr0YxQ1Dqrr-9" parent="FDHTR0U0ryr0YxQ1Dqrr-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;PK&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="41" as="geometry">
+            <mxRectangle height="29" width="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FDHTR0U0ryr0YxQ1Dqrr-10" parent="FDHTR0U0ryr0YxQ1Dqrr-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;staff_id&lt;/font&gt;" vertex="1">
+          <mxGeometry height="29" width="179" x="41" as="geometry">
+            <mxRectangle height="29" width="179" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-0" parent="OxUsx--4gWSUSQ9xe3zu-5" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="220" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-1" parent="DcKOSu15UjOfGYppWeHd-0" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;rowspan=6;colspan=1;" vertex="1">
+          <mxGeometry height="174" width="41" as="geometry">
+            <mxRectangle height="29" width="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-2" parent="DcKOSu15UjOfGYppWeHd-0" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="staff_number" vertex="1">
+          <mxGeometry height="29" width="179" x="41" as="geometry">
+            <mxRectangle height="29" width="179" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-3" parent="OxUsx--4gWSUSQ9xe3zu-5" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="220" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-4" parent="DcKOSu15UjOfGYppWeHd-3" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="41" as="geometry">
+            <mxRectangle height="29" width="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-5" parent="DcKOSu15UjOfGYppWeHd-3" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="given_name" vertex="1">
+          <mxGeometry height="29" width="179" x="41" as="geometry">
+            <mxRectangle height="29" width="179" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-6" parent="OxUsx--4gWSUSQ9xe3zu-5" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="220" y="129" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-7" parent="DcKOSu15UjOfGYppWeHd-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeWidth=0;" vertex="1" visible="0">
+          <mxGeometry height="29" width="41" as="geometry">
+            <mxRectangle height="29" width="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-8" parent="DcKOSu15UjOfGYppWeHd-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="family_name" vertex="1">
+          <mxGeometry height="29" width="179" x="41" as="geometry">
+            <mxRectangle height="29" width="179" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-9" parent="OxUsx--4gWSUSQ9xe3zu-5" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="220" y="158" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-10" parent="DcKOSu15UjOfGYppWeHd-9" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;strokeWidth=0;" vertex="1" visible="0">
+          <mxGeometry height="29" width="41" as="geometry">
+            <mxRectangle height="29" width="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-11" parent="DcKOSu15UjOfGYppWeHd-9" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="role" vertex="1">
+          <mxGeometry height="29" width="179" x="41" as="geometry">
+            <mxRectangle height="29" width="179" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-12" parent="OxUsx--4gWSUSQ9xe3zu-5" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="220" y="187" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-13" parent="DcKOSu15UjOfGYppWeHd-12" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="41" as="geometry">
+            <mxRectangle height="29" width="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-14" parent="DcKOSu15UjOfGYppWeHd-12" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="specialty" vertex="1">
+          <mxGeometry height="29" width="179" x="41" as="geometry">
+            <mxRectangle height="29" width="179" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-15" parent="OxUsx--4gWSUSQ9xe3zu-5" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="220" y="216" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-16" parent="DcKOSu15UjOfGYppWeHd-15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="41" as="geometry">
+            <mxRectangle height="29" width="41" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-17" parent="DcKOSu15UjOfGYppWeHd-15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="active" vertex="1">
+          <mxGeometry height="29" width="179" x="41" as="geometry">
+            <mxRectangle height="29" width="179" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;font style=&quot;font-size: 12px;&quot;&gt;DIAGNOSIS_GROUPS&lt;/font&gt;" mermaidId="n:DIAGNOSIS_GROUPS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#ECFEFF;strokeColor=#22D3EE;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="DIAGNOSIS_GROUPS" id="OxUsx--4gWSUSQ9xe3zu-6">
+          <mxCell parent="OxUsx--4gWSUSQ9xe3zu-2" style="shape=table;startSize=42;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#ECFEFF;strokeColor=#22D3EE;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="158" width="160" x="170" y="-790" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="FDHTR0U0ryr0YxQ1Dqrr-5" parent="OxUsx--4gWSUSQ9xe3zu-6" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="29" width="160" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="FDHTR0U0ryr0YxQ1Dqrr-6" parent="FDHTR0U0ryr0YxQ1Dqrr-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="PK" vertex="1">
+          <mxGeometry height="29" width="44" as="geometry">
+            <mxRectangle height="29" width="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FDHTR0U0ryr0YxQ1Dqrr-7" parent="FDHTR0U0ryr0YxQ1Dqrr-5" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="diagnosis_group_id" vertex="1">
+          <mxGeometry height="29" width="116" x="44" as="geometry">
+            <mxRectangle height="29" width="116" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-52" parent="OxUsx--4gWSUSQ9xe3zu-6" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="71" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-53" parent="DcKOSu15UjOfGYppWeHd-52" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;rowspan=3;colspan=1;" vertex="1">
+          <mxGeometry height="87" width="44" as="geometry">
+            <mxRectangle height="29" width="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-54" parent="DcKOSu15UjOfGYppWeHd-52" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="code" vertex="1">
+          <mxGeometry height="29" width="116" x="44" as="geometry">
+            <mxRectangle height="29" width="116" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-49" parent="OxUsx--4gWSUSQ9xe3zu-6" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-50" parent="DcKOSu15UjOfGYppWeHd-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="44" as="geometry">
+            <mxRectangle height="29" width="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-51" parent="DcKOSu15UjOfGYppWeHd-49" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="group_name" vertex="1">
+          <mxGeometry height="29" width="116" x="44" as="geometry">
+            <mxRectangle height="29" width="116" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-46" parent="OxUsx--4gWSUSQ9xe3zu-6" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="160" y="129" as="geometry" />
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-47" parent="DcKOSu15UjOfGYppWeHd-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="44" as="geometry">
+            <mxRectangle height="29" width="44" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="DcKOSu15UjOfGYppWeHd-48" parent="DcKOSu15UjOfGYppWeHd-46" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="description" vertex="1">
+          <mxGeometry height="29" width="116" x="44" as="geometry">
+            <mxRectangle height="29" width="116" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;font style=&quot;font-size: 12px;&quot;&gt;ADMISSION_TREATMENTS&lt;/font&gt;" mermaidId="n:ADMISSION_TREATMENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#F0FDF4;strokeColor=#4ADE80;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="ADMISSION_TREATMENTS" id="OxUsx--4gWSUSQ9xe3zu-7">
+          <mxCell parent="OxUsx--4gWSUSQ9xe3zu-2" style="shape=table;startSize=45;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#F0FDF4;strokeColor=#4ADE80;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="335" width="196" x="194" y="135" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-70" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="29" width="196" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-71" parent="b-R_YWjt4Pc2LUZ1d9O4-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="PK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-72" parent="b-R_YWjt4Pc2LUZ1d9O4-70" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="admission_treatment_id" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-121" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="196" y="74" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-122" parent="b-R_YWjt4Pc2LUZ1d9O4-121" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-123" parent="b-R_YWjt4Pc2LUZ1d9O4-121" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="admission_id" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-118" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="196" y="103" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-119" parent="b-R_YWjt4Pc2LUZ1d9O4-118" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-120" parent="b-R_YWjt4Pc2LUZ1d9O4-118" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="medication_id" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-115" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="196" y="132" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-116" parent="b-R_YWjt4Pc2LUZ1d9O4-115" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="PK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-117" parent="b-R_YWjt4Pc2LUZ1d9O4-115" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="prescribed_by_staff_id" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-112" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="196" y="161" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-113" parent="b-R_YWjt4Pc2LUZ1d9O4-112" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;rowspan=6;colspan=1;" vertex="1">
+          <mxGeometry height="174" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-114" parent="b-R_YWjt4Pc2LUZ1d9O4-112" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="prescribed_at" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-109" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="196" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-110" parent="b-R_YWjt4Pc2LUZ1d9O4-109" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-111" parent="b-R_YWjt4Pc2LUZ1d9O4-109" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="dose" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-106" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="196" y="219" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-107" parent="b-R_YWjt4Pc2LUZ1d9O4-106" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-108" parent="b-R_YWjt4Pc2LUZ1d9O4-106" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="route" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-103" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="196" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-104" parent="b-R_YWjt4Pc2LUZ1d9O4-103" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-105" parent="b-R_YWjt4Pc2LUZ1d9O4-103" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="frequency" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-127" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="196" y="277" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-128" parent="b-R_YWjt4Pc2LUZ1d9O4-127" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-129" parent="b-R_YWjt4Pc2LUZ1d9O4-127" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="duration_days" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-124" parent="OxUsx--4gWSUSQ9xe3zu-7" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="196" y="306" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-125" parent="b-R_YWjt4Pc2LUZ1d9O4-124" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-126" parent="b-R_YWjt4Pc2LUZ1d9O4-124" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="status" vertex="1">
+          <mxGeometry height="29" width="156" x="40" as="geometry">
+            <mxRectangle height="29" width="156" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="TREATMENTS" mermaidId="n:TREATMENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F5F3FF;strokeColor=#A78BFA;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="TREATMENTS" id="OxUsx--4gWSUSQ9xe3zu-8">
+          <mxCell parent="OxUsx--4gWSUSQ9xe3zu-2" style="shape=table;startSize=40;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F5F3FF;strokeColor=#A78BFA;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="185" width="150" x="90" y="-320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-0" parent="OxUsx--4gWSUSQ9xe3zu-8" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="29" width="150" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-1" parent="b-R_YWjt4Pc2LUZ1d9O4-0" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="PK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-10" parent="b-R_YWjt4Pc2LUZ1d9O4-0" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="treatment_id" vertex="1">
+          <mxGeometry height="29" width="110" x="40" as="geometry">
+            <mxRectangle height="29" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-2" parent="OxUsx--4gWSUSQ9xe3zu-8" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="150" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-3" parent="b-R_YWjt4Pc2LUZ1d9O4-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;rowspan=4;colspan=1;" vertex="1">
+          <mxGeometry height="116" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-11" parent="b-R_YWjt4Pc2LUZ1d9O4-2" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="treatment_code" vertex="1">
+          <mxGeometry height="29" width="110" x="40" as="geometry">
+            <mxRectangle height="29" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-8" parent="OxUsx--4gWSUSQ9xe3zu-8" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="150" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-9" parent="b-R_YWjt4Pc2LUZ1d9O4-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-12" parent="b-R_YWjt4Pc2LUZ1d9O4-8" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="treatment_name" vertex="1">
+          <mxGeometry height="29" width="110" x="40" as="geometry">
+            <mxRectangle height="29" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-6" parent="OxUsx--4gWSUSQ9xe3zu-8" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="150" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-7" parent="b-R_YWjt4Pc2LUZ1d9O4-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-13" parent="b-R_YWjt4Pc2LUZ1d9O4-6" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="treatment_category" vertex="1">
+          <mxGeometry height="29" width="110" x="40" as="geometry">
+            <mxRectangle height="29" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-4" parent="OxUsx--4gWSUSQ9xe3zu-8" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="150" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-5" parent="b-R_YWjt4Pc2LUZ1d9O4-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-14" parent="b-R_YWjt4Pc2LUZ1d9O4-4" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="standard_cost" vertex="1">
+          <mxGeometry height="29" width="110" x="40" as="geometry">
+            <mxRectangle height="29" width="110" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;font style=&quot;font-size: 12px;&quot;&gt;PRESCRIPTIONS&lt;/font&gt;" mermaidId="n:PRESCRIPTIONS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEF2F2;strokeColor=#F87171;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="PRESCRIPTIONS" id="OxUsx--4gWSUSQ9xe3zu-9">
+          <mxCell parent="OxUsx--4gWSUSQ9xe3zu-2" style="shape=table;startSize=35;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEF2F2;strokeColor=#F87171;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="325" width="182" x="758" y="135" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-73" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="29" width="182" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-75" parent="b-R_YWjt4Pc2LUZ1d9O4-73" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="PK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-74" parent="b-R_YWjt4Pc2LUZ1d9O4-73" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="prescription_id" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-100" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="182" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-101" parent="b-R_YWjt4Pc2LUZ1d9O4-100" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-102" parent="b-R_YWjt4Pc2LUZ1d9O4-100" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="admission_id" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-97" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="182" y="93" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-98" parent="b-R_YWjt4Pc2LUZ1d9O4-97" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-99" parent="b-R_YWjt4Pc2LUZ1d9O4-97" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="medication_id" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-94" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="182" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-95" parent="b-R_YWjt4Pc2LUZ1d9O4-94" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-96" parent="b-R_YWjt4Pc2LUZ1d9O4-94" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="prescribed_by_staff_id" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-91" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="182" y="151" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-92" parent="b-R_YWjt4Pc2LUZ1d9O4-91" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-93" parent="b-R_YWjt4Pc2LUZ1d9O4-91" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="prescribed_at" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-88" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="182" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-89" parent="b-R_YWjt4Pc2LUZ1d9O4-88" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-90" parent="b-R_YWjt4Pc2LUZ1d9O4-88" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="dose" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-85" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="182" y="209" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-86" parent="b-R_YWjt4Pc2LUZ1d9O4-85" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-87" parent="b-R_YWjt4Pc2LUZ1d9O4-85" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="route" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-82" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="182" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-83" parent="b-R_YWjt4Pc2LUZ1d9O4-82" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-84" parent="b-R_YWjt4Pc2LUZ1d9O4-82" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="frequency" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-79" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="182" y="267" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-80" parent="b-R_YWjt4Pc2LUZ1d9O4-79" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-81" parent="b-R_YWjt4Pc2LUZ1d9O4-79" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="duration_days" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-76" parent="OxUsx--4gWSUSQ9xe3zu-9" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="182" y="296" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-77" parent="b-R_YWjt4Pc2LUZ1d9O4-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-78" parent="b-R_YWjt4Pc2LUZ1d9O4-76" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="status" vertex="1">
+          <mxGeometry height="29" width="142" x="40" as="geometry">
+            <mxRectangle height="29" width="142" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;font style=&quot;font-size: 12px;&quot;&gt;MEDICATIONS&lt;/font&gt;" mermaidId="n:MEDICATIONS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEFCE8;strokeColor=#FACC15;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="MEDICATIONS" id="OxUsx--4gWSUSQ9xe3zu-10">
+          <mxCell parent="OxUsx--4gWSUSQ9xe3zu-2" style="shape=table;startSize=40;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEFCE8;strokeColor=#FACC15;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="216" width="164" x="740" y="-320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-17" parent="OxUsx--4gWSUSQ9xe3zu-10" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="29" width="164" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-18" parent="b-R_YWjt4Pc2LUZ1d9O4-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="PK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-46" parent="b-R_YWjt4Pc2LUZ1d9O4-17" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="medication_id" vertex="1">
+          <mxGeometry height="29" width="124" x="40" as="geometry">
+            <mxRectangle height="29" width="124" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-60" parent="OxUsx--4gWSUSQ9xe3zu-10" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="164" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-61" parent="b-R_YWjt4Pc2LUZ1d9O4-60" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;rowspan=5;colspan=1;" vertex="1">
+          <mxGeometry height="145" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-62" parent="b-R_YWjt4Pc2LUZ1d9O4-60" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="medication_code" vertex="1">
+          <mxGeometry height="29" width="124" x="40" as="geometry">
+            <mxRectangle height="29" width="124" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-57" parent="OxUsx--4gWSUSQ9xe3zu-10" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="164" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-58" parent="b-R_YWjt4Pc2LUZ1d9O4-57" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-59" parent="b-R_YWjt4Pc2LUZ1d9O4-57" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="medication_name" vertex="1">
+          <mxGeometry height="29" width="124" x="40" as="geometry">
+            <mxRectangle height="29" width="124" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-54" parent="OxUsx--4gWSUSQ9xe3zu-10" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="164" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-55" parent="b-R_YWjt4Pc2LUZ1d9O4-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-56" parent="b-R_YWjt4Pc2LUZ1d9O4-54" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="formulation" vertex="1">
+          <mxGeometry height="29" width="124" x="40" as="geometry">
+            <mxRectangle height="29" width="124" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-51" parent="OxUsx--4gWSUSQ9xe3zu-10" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="164" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-52" parent="b-R_YWjt4Pc2LUZ1d9O4-51" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-53" parent="b-R_YWjt4Pc2LUZ1d9O4-51" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="strength" vertex="1">
+          <mxGeometry height="29" width="124" x="40" as="geometry">
+            <mxRectangle height="29" width="124" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-48" parent="OxUsx--4gWSUSQ9xe3zu-10" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="164" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-49" parent="b-R_YWjt4Pc2LUZ1d9O4-48" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-50" parent="b-R_YWjt4Pc2LUZ1d9O4-48" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="controlled_medicine" vertex="1">
+          <mxGeometry height="29" width="124" x="40" as="geometry">
+            <mxRectangle height="29" width="124" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="&lt;font style=&quot;font-size: 12px;&quot;&gt;APPOINTMENTS&lt;/font&gt;" mermaidId="n:APPOINTMENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#EEF2FF;strokeColor=#818CF8;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="APPOINTMENTS" id="OxUsx--4gWSUSQ9xe3zu-11">
+          <mxCell parent="OxUsx--4gWSUSQ9xe3zu-2" style="shape=table;startSize=40;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#EEF2FF;strokeColor=#818CF8;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="272" width="190" x="476" y="-320" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-15" parent="OxUsx--4gWSUSQ9xe3zu-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" value="" vertex="1">
+          <mxGeometry height="29" width="190" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-16" parent="b-R_YWjt4Pc2LUZ1d9O4-15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="PK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-35" parent="b-R_YWjt4Pc2LUZ1d9O4-15" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="appointment_id" vertex="1">
+          <mxGeometry height="29" width="150" x="40" as="geometry">
+            <mxRectangle height="29" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-33" parent="OxUsx--4gWSUSQ9xe3zu-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="190" y="69" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-34" parent="b-R_YWjt4Pc2LUZ1d9O4-33" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-36" parent="b-R_YWjt4Pc2LUZ1d9O4-33" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="patient_id" vertex="1">
+          <mxGeometry height="29" width="150" x="40" as="geometry">
+            <mxRectangle height="29" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-31" parent="OxUsx--4gWSUSQ9xe3zu-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="190" y="98" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-32" parent="b-R_YWjt4Pc2LUZ1d9O4-31" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="FK" vertex="1">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-37" parent="b-R_YWjt4Pc2LUZ1d9O4-31" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="staff_id" vertex="1">
+          <mxGeometry height="29" width="150" x="40" as="geometry">
+            <mxRectangle height="29" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-29" parent="OxUsx--4gWSUSQ9xe3zu-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="190" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-30" parent="b-R_YWjt4Pc2LUZ1d9O4-29" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;rowspan=5;colspan=1;" vertex="1">
+          <mxGeometry height="145" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-38" parent="b-R_YWjt4Pc2LUZ1d9O4-29" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="scheduled_start" vertex="1">
+          <mxGeometry height="29" width="150" x="40" as="geometry">
+            <mxRectangle height="29" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-27" parent="OxUsx--4gWSUSQ9xe3zu-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="190" y="156" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-28" parent="b-R_YWjt4Pc2LUZ1d9O4-27" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-39" parent="b-R_YWjt4Pc2LUZ1d9O4-27" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="scheduled_end" vertex="1">
+          <mxGeometry height="29" width="150" x="40" as="geometry">
+            <mxRectangle height="29" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-25" parent="OxUsx--4gWSUSQ9xe3zu-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="190" y="185" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-26" parent="b-R_YWjt4Pc2LUZ1d9O4-25" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-40" parent="b-R_YWjt4Pc2LUZ1d9O4-25" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="appointment_type" vertex="1">
+          <mxGeometry height="29" width="150" x="40" as="geometry">
+            <mxRectangle height="29" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-23" parent="OxUsx--4gWSUSQ9xe3zu-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="190" y="214" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-24" parent="b-R_YWjt4Pc2LUZ1d9O4-23" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-41" parent="b-R_YWjt4Pc2LUZ1d9O4-23" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="status" vertex="1">
+          <mxGeometry height="29" width="150" x="40" as="geometry">
+            <mxRectangle height="29" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-21" parent="OxUsx--4gWSUSQ9xe3zu-11" style="shape=tableRow;horizontal=0;startSize=0;swimlaneHead=0;swimlaneBody=0;strokeColor=inherit;top=0;left=0;bottom=0;right=0;collapsible=0;dropTarget=0;fillColor=none;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fixedHeader=1;" vertex="1">
+          <mxGeometry height="29" width="190" y="243" as="geometry" />
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-22" parent="b-R_YWjt4Pc2LUZ1d9O4-21" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" vertex="1" visible="0">
+          <mxGeometry height="29" width="40" as="geometry">
+            <mxRectangle height="29" width="40" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="b-R_YWjt4Pc2LUZ1d9O4-42" parent="b-R_YWjt4Pc2LUZ1d9O4-21" style="shape=partialRectangle;html=1;whiteSpace=wrap;connectable=0;strokeColor=inherit;overflow=hidden;fillColor=none;top=0;left=0;bottom=0;right=0;pointerEvents=1;" value="outcome_summary" vertex="1">
+          <mxGeometry height="29" width="150" x="40" as="geometry">
+            <mxRectangle height="29" width="150" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <UserObject label="has" mermaidId="e:PATIENTS-&gt;ADMISSIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="has" id="OxUsx--4gWSUSQ9xe3zu-12">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="DcKOSu15UjOfGYppWeHd-43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="OxUsx--4gWSUSQ9xe3zu-4">
+            <mxGeometry relative="1" x="0.21" as="geometry">
+              <Array as="points">
+                <mxPoint x="402.2" y="-340" />
+                <mxPoint x="350" y="-340" />
+              </Array>
+              <mxPoint x="403" y="-290" as="sourcePoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="attends" mermaidId="e:STAFF-&gt;ADMISSIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.26;exitY=1;entryX=0.71;entryY=0;" mermaidBaseValue="attends" id="OxUsx--4gWSUSQ9xe3zu-13">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="DcKOSu15UjOfGYppWeHd-15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;exitX=0.177;exitY=1.082;exitDx=0;exitDy=0;exitPerimeter=0;" target="OxUsx--4gWSUSQ9xe3zu-4">
+            <mxGeometry relative="1" x="-0.2685" as="geometry">
+              <Array as="points">
+                <mxPoint x="598.9" y="-420" />
+                <mxPoint x="459.5" y="-420" />
+                <mxPoint x="459.5" y="-340" />
+                <mxPoint x="420" y="-340" />
+              </Array>
+              <mxPoint x="640.6399999999999" y="-410" as="sourcePoint" />
+              <mxPoint x="360.0000000000003" y="-120.5" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="classifies" mermaidId="e:DIAGNOSIS_GROUPS-&gt;ADMISSIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.29;entryY=0;" mermaidBaseValue="classifies" id="OxUsx--4gWSUSQ9xe3zu-14">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="DcKOSu15UjOfGYppWeHd-46" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;entryX=0.119;entryY=0.002;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;entryDx=0;entryDy=0;entryPerimeter=0;" target="OxUsx--4gWSUSQ9xe3zu-4">
+            <mxGeometry relative="1" x="0.2447" as="geometry">
+              <Array as="points">
+                <mxPoint x="233.7" y="-397.8" />
+                <mxPoint x="289" y="-397.8" />
+              </Array>
+              <mxPoint x="233.67999999999998" y="-470.00499999999994" as="sourcePoint" />
+              <mxPoint x="314.3199999999999" y="-337.81" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="receives" mermaidId="e:ADMISSIONS-&gt;ADMISSION_TREATMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="receives" id="OxUsx--4gWSUSQ9xe3zu-15">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="DcKOSu15UjOfGYppWeHd-82" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.195;exitY=0.982;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;exitDx=0;exitDy=0;exitPerimeter=0;" target="OxUsx--4gWSUSQ9xe3zu-7">
+            <mxGeometry relative="1" x="-0.5502" as="geometry">
+              <Array as="points">
+                <mxPoint x="301.2" y="95" />
+                <mxPoint x="280" y="95" />
+              </Array>
+              <mxPoint x="280" y="130" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="catalogues" mermaidId="e:TREATMENTS-&gt;ADMISSION_TREATMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.28;entryY=0;" mermaidBaseValue="catalogues" id="OxUsx--4gWSUSQ9xe3zu-16">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="b-R_YWjt4Pc2LUZ1d9O4-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;exitX=0.68;exitY=1.011;exitDx=0;exitDy=0;exitPerimeter=0;" target="OxUsx--4gWSUSQ9xe3zu-7">
+            <mxGeometry relative="1" x="0.0855" as="geometry">
+              <Array as="points">
+                <mxPoint x="192" y="50" />
+                <mxPoint x="230" y="50" />
+              </Array>
+              <mxPoint x="153" y="-135" as="sourcePoint" />
+              <mxPoint x="230" y="130" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="performs" mermaidId="e:STAFF-&gt;ADMISSION_TREATMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.58;exitY=1;entryX=0.72;entryY=0;" mermaidBaseValue="performs" id="OxUsx--4gWSUSQ9xe3zu-17">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="DcKOSu15UjOfGYppWeHd-15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.667;exitY=1.05;entryX=0.72;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;exitDx=0;exitDy=0;exitPerimeter=0;">
+            <mxGeometry relative="1" x="-0.6695" y="-8" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="706.7" y="115" />
+                <mxPoint x="350" y="115" />
+              </Array>
+              <mxPoint x="728.3999999999999" y="-545" as="sourcePoint" />
+              <mxPoint x="350.00000000000006" y="135" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="includes" mermaidId="e:ADMISSIONS-&gt;PRESCRIPTIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.64;exitY=1;entryX=0.29;entryY=0;" mermaidBaseValue="includes" id="OxUsx--4gWSUSQ9xe3zu-18">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="DcKOSu15UjOfGYppWeHd-82" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.412;exitY=1.009;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;exitDx=0;exitDy=0;exitPerimeter=0;" target="OxUsx--4gWSUSQ9xe3zu-9">
+            <mxGeometry relative="1" x="0.14" y="-16" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="335.9" y="34" />
+                <mxPoint x="780.5" y="34" />
+                <mxPoint x="780.5" y="100" />
+                <mxPoint x="786.6" y="100" />
+              </Array>
+              <mxPoint x="786.64" y="130" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="identifies" mermaidId="e:MEDICATIONS-&gt;PRESCRIPTIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="identifies" id="OxUsx--4gWSUSQ9xe3zu-19">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="OxUsx--4gWSUSQ9xe3zu-10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;entryX=0.348;entryY=0.004;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="OxUsx--4gWSUSQ9xe3zu-9">
+            <mxGeometry relative="1" x="-0.4274" as="geometry">
+              <mxPoint x="821.34" y="-100" as="sourcePoint" />
+              <mxPoint x="849" y="89" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="prescribes" mermaidId="e:STAFF-&gt;PRESCRIPTIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.74;exitY=1;entryX=0.72;entryY=0;" mermaidBaseValue="prescribes" id="OxUsx--4gWSUSQ9xe3zu-20">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="DcKOSu15UjOfGYppWeHd-15" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;exitX=0.82;exitY=1.08;exitDx=0;exitDy=0;exitPerimeter=0;" target="OxUsx--4gWSUSQ9xe3zu-9">
+            <mxGeometry relative="1" x="0.1282" as="geometry">
+              <Array as="points">
+                <mxPoint x="740.4" y="-435" />
+                <mxPoint x="988.2" y="-435" />
+                <mxPoint x="988.2" y="-195" />
+                <mxPoint x="987.2" y="-195" />
+                <mxPoint x="987.2" y="-55" />
+                <mxPoint x="906.3" y="-55" />
+              </Array>
+              <mxPoint x="740" y="-540" as="sourcePoint" />
+              <mxPoint x="906.2399999999998" y="90" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="books" mermaidId="e:PATIENTS-&gt;APPOINTMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.63;exitY=1;entryX=0.36;entryY=0;" mermaidBaseValue="books" id="OxUsx--4gWSUSQ9xe3zu-21">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="DcKOSu15UjOfGYppWeHd-43" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.877;exitY=1.028;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;exitDx=0;exitDy=0;exitPerimeter=0;">
+            <mxGeometry relative="1" x="-0.3398" y="5" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="505.4" y="-320" />
+              </Array>
+              <mxPoint x="505.4" y="-320" as="targetPoint" />
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="conducts" mermaidId="e:STAFF-&gt;APPOINTMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.42;exitY=1;entryX=0.65;entryY=0;" mermaidBaseValue="conducts" id="OxUsx--4gWSUSQ9xe3zu-22">
+          <mxCell edge="1" parent="OxUsx--4gWSUSQ9xe3zu-2" source="OxUsx--4gWSUSQ9xe3zu-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.42;exitY=1;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="OxUsx--4gWSUSQ9xe3zu-11">
+            <mxGeometry relative="1" x="-0.4406" as="geometry">
+              <mxPoint as="offset" />
+              <Array as="points">
+                <mxPoint x="652.4" y="-380" />
+                <mxPoint x="620" y="-380" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Page-2" id="2O13pj83fgANXgfmuMOs">
+    <mxGraphModel dx="958" dy="838" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="CCkO5mkwxYNID3__fSDK-0" />
+        <mxCell id="CCkO5mkwxYNID3__fSDK-1" parent="CCkO5mkwxYNID3__fSDK-0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;erDiagram\n PATIENTS ||--o{ ADMISSIONS : has\n STAFF ||--o{ ADMISSIONS : attends\n DIAGNOSIS_GROUPS ||--o{ ADMISSIONS : classifies\n ADMISSIONS ||--o{ ADMISSION_TREATMENTS : receives\n TREATMENTS ||--o{ ADMISSION_TREATMENTS : catalogues\n STAFF ||--o{ ADMISSION_TREATMENTS : performs\n ADMISSIONS ||--o{ PRESCRIPTIONS : includes\n MEDICATIONS ||--o{ PRESCRIPTIONS : identifies\n STAFF ||--o{ PRESCRIPTIONS : prescribes\n PATIENTS ||--o{ APPOINTMENTS : books\n STAFF ||--o{ APPOINTMENTS : conducts\n STAFF ||--o{ STAFF : \&quot;manages\&quot;\n\n&quot;,&#xa;  &quot;config&quot;: null,&#xa;  &quot;version&quot;: &quot;12&quot;&#xa;}" id="CCkO5mkwxYNID3__fSDK-2">
+          <mxCell connectable="0" parent="CCkO5mkwxYNID3__fSDK-1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PATIENTS" mermaidId="n:PATIENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FDF4FF;strokeColor=#E879F9;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="PATIENTS" id="CCkO5mkwxYNID3__fSDK-3">
+          <mxCell parent="CCkO5mkwxYNID3__fSDK-2" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FDF4FF;strokeColor=#E879F9;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="104" x="305" y="110" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ADMISSIONS" mermaidId="n:ADMISSIONS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="ADMISSIONS" id="CCkO5mkwxYNID3__fSDK-4">
+          <mxCell parent="CCkO5mkwxYNID3__fSDK-2" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="126" x="195" y="312" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="STAFF" mermaidId="n:STAFF" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="STAFF" id="CCkO5mkwxYNID3__fSDK-5">
+          <mxCell parent="CCkO5mkwxYNID3__fSDK-2" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="100" x="549" y="110" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="DIAGNOSIS_GROUPS" mermaidId="n:DIAGNOSIS_GROUPS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#ECFEFF;strokeColor=#22D3EE;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="DIAGNOSIS_GROUPS" id="CCkO5mkwxYNID3__fSDK-6">
+          <mxCell parent="CCkO5mkwxYNID3__fSDK-2" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#ECFEFF;strokeColor=#22D3EE;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="160" x="96" y="110" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ADMISSION_TREATMENTS" mermaidId="n:ADMISSION_TREATMENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#F0FDF4;strokeColor=#4ADE80;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="ADMISSION_TREATMENTS" id="CCkO5mkwxYNID3__fSDK-7">
+          <mxCell parent="CCkO5mkwxYNID3__fSDK-2" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#F0FDF4;strokeColor=#4ADE80;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="160" x="134" y="534" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TREATMENTS" mermaidId="n:TREATMENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F5F3FF;strokeColor=#A78BFA;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="TREATMENTS" id="CCkO5mkwxYNID3__fSDK-8">
+          <mxCell parent="CCkO5mkwxYNID3__fSDK-2" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F5F3FF;strokeColor=#A78BFA;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="125" x="30" y="312" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PRESCRIPTIONS" mermaidId="n:PRESCRIPTIONS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEF2F2;strokeColor=#F87171;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="PRESCRIPTIONS" id="CCkO5mkwxYNID3__fSDK-9">
+          <mxCell parent="CCkO5mkwxYNID3__fSDK-2" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEF2F2;strokeColor=#F87171;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="146" x="720" y="534" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="MEDICATIONS" mermaidId="n:MEDICATIONS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEFCE8;strokeColor=#FACC15;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="MEDICATIONS" id="CCkO5mkwxYNID3__fSDK-10">
+          <mxCell parent="CCkO5mkwxYNID3__fSDK-2" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEFCE8;strokeColor=#FACC15;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="132" x="702" y="312" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="APPOINTMENTS" mermaidId="n:APPOINTMENTS" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#EEF2FF;strokeColor=#818CF8;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="APPOINTMENTS" id="CCkO5mkwxYNID3__fSDK-11">
+          <mxCell parent="CCkO5mkwxYNID3__fSDK-2" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#EEF2FF;strokeColor=#818CF8;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="143" x="416" y="312" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="has" mermaidId="e:PATIENTS-&gt;ADMISSIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="has" id="CCkO5mkwxYNID3__fSDK-12">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-4">
+            <mxGeometry relative="1" x="0.4104750304506699" as="geometry">
+              <Array as="points">
+                <mxPoint x="343" y="211" />
+                <mxPoint x="258" y="211" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="attends" mermaidId="e:STAFF-&gt;ADMISSIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.26;exitY=1;entryX=0.71;entryY=0;" mermaidBaseValue="attends" id="CCkO5mkwxYNID3__fSDK-13">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.26;exitY=1;entryX=0.71;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-4">
+            <mxGeometry relative="1" x="0.2231003039513677" as="geometry">
+              <Array as="points">
+                <mxPoint x="575" y="211" />
+                <mxPoint x="384" y="211" />
+                <mxPoint x="384" y="292" />
+                <mxPoint x="285" y="292" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="classifies" mermaidId="e:DIAGNOSIS_GROUPS-&gt;ADMISSIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.29;entryY=0;" mermaidBaseValue="classifies" id="CCkO5mkwxYNID3__fSDK-14">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.29;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-4">
+            <mxGeometry relative="1" x="-0.3173483779971791" as="geometry">
+              <Array as="points">
+                <mxPoint x="176" y="292" />
+                <mxPoint x="232" y="292" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="receives" mermaidId="e:ADMISSIONS-&gt;ADMISSION_TREATMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="receives" id="CCkO5mkwxYNID3__fSDK-15">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-7">
+            <mxGeometry relative="1" x="-0.16113039167079812" as="geometry">
+              <Array as="points">
+                <mxPoint x="241" y="494" />
+                <mxPoint x="214" y="494" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="catalogues" mermaidId="e:TREATMENTS-&gt;ADMISSION_TREATMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.28;entryY=0;" mermaidBaseValue="catalogues" id="CCkO5mkwxYNID3__fSDK-16">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.28;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-7">
+            <mxGeometry relative="1" x="-0.37885462555066074" as="geometry">
+              <Array as="points">
+                <mxPoint x="93" y="494" />
+                <mxPoint x="179" y="494" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="performs" mermaidId="e:STAFF-&gt;ADMISSION_TREATMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.58;exitY=1;entryX=0.72;entryY=0;" mermaidBaseValue="performs" id="CCkO5mkwxYNID3__fSDK-17">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.58;exitY=1;entryX=0.72;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-7">
+            <mxGeometry relative="1" x="-0.47863818424566085" as="geometry">
+              <Array as="points">
+                <mxPoint x="607" y="231" />
+                <mxPoint x="631" y="231" />
+                <mxPoint x="631" y="262" />
+                <mxPoint x="631" y="413" />
+                <mxPoint x="628" y="413" />
+                <mxPoint x="628" y="464" />
+                <mxPoint x="628" y="514" />
+                <mxPoint x="249" y="514" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="includes" mermaidId="e:ADMISSIONS-&gt;PRESCRIPTIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.64;exitY=1;entryX=0.29;entryY=0;" mermaidBaseValue="includes" id="CCkO5mkwxYNID3__fSDK-18">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.64;exitY=1;entryX=0.29;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-9">
+            <mxGeometry relative="1" x="0.5158202605689977" as="geometry">
+              <Array as="points">
+                <mxPoint x="276" y="433" />
+                <mxPoint x="681" y="433" />
+                <mxPoint x="681" y="514" />
+                <mxPoint x="762" y="514" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="identifies" mermaidId="e:MEDICATIONS-&gt;PRESCRIPTIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="identifies" id="CCkO5mkwxYNID3__fSDK-19">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-9">
+            <mxGeometry relative="1" x="-0.1506024096385542" as="geometry">
+              <Array as="points">
+                <mxPoint x="768" y="494" />
+                <mxPoint x="793" y="494" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="prescribes" mermaidId="e:STAFF-&gt;PRESCRIPTIONS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.74;exitY=1;entryX=0.72;entryY=0;" mermaidBaseValue="prescribes" id="CCkO5mkwxYNID3__fSDK-20">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.74;exitY=1;entryX=0.72;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-9">
+            <mxGeometry relative="1" x="0.28147889780258106" as="geometry">
+              <Array as="points">
+                <mxPoint x="623" y="211" />
+                <mxPoint x="911" y="211" />
+                <mxPoint x="911" y="262" />
+                <mxPoint x="911" y="464" />
+                <mxPoint x="911" y="494" />
+                <mxPoint x="825" y="494" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="books" mermaidId="e:PATIENTS-&gt;APPOINTMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.63;exitY=1;entryX=0.36;entryY=0;" mermaidBaseValue="books" id="CCkO5mkwxYNID3__fSDK-21">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.63;exitY=1;entryX=0.36;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-11">
+            <mxGeometry relative="1" x="0.44431687715269796" as="geometry">
+              <Array as="points">
+                <mxPoint x="371" y="231" />
+                <mxPoint x="467" y="231" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="conducts" mermaidId="e:STAFF-&gt;APPOINTMENTS#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.42;exitY=1;entryX=0.65;entryY=0;" mermaidBaseValue="conducts" id="CCkO5mkwxYNID3__fSDK-22">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.42;exitY=1;entryX=0.65;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-11">
+            <mxGeometry relative="1" x="0.09202453987730053" as="geometry">
+              <Array as="points">
+                <mxPoint x="591" y="231" />
+                <mxPoint x="540" y="231" />
+                <mxPoint x="540" y="292" />
+                <mxPoint x="508" y="292" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="manages" mermaidId="e:STAFF-&gt;STAFF#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0;exitY=0.38;entryX=0;entryY=0.62;" mermaidBaseValue="manages" id="CCkO5mkwxYNID3__fSDK-23">
+          <mxCell edge="1" parent="CCkO5mkwxYNID3__fSDK-2" source="CCkO5mkwxYNID3__fSDK-5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0;exitY=0.38;entryX=0;entryY=0.62;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="CCkO5mkwxYNID3__fSDK-5">
+            <mxGeometry relative="1" as="geometry">
+              <Array as="points">
+                <mxPoint x="529" y="141" />
+                <mxPoint x="529" y="160" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="4qNgaQoEYCLDnxHn3n2o" name="Page-3">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <UserObject label="" mermaidData="{&#xa;  &quot;data&quot;: &quot;erDiagram\n    PATIENT ||--o{ ADMISSION : \&quot;has\&quot;\n    PATIENT ||--o{ APPOINTMENT : \&quot;books\&quot;\n    STAFF ||--o{ ADMISSION : \&quot;attends\&quot;\n    STAFF ||--o{ ADMISSION_TREATMENT : \&quot;performs\&quot;\n    STAFF ||--o{ PRESCRIPTION : \&quot;prescribes\&quot;\n    STAFF ||--o{ APPOINTMENT : \&quot;conducts\&quot;\n    DIAGNOSIS_GROUP ||--o{ ADMISSION : \&quot;categorises\&quot;\n    ADMISSION ||--o{ ADMISSION_TREATMENT : \&quot;receives\&quot;\n    ADMISSION ||--o{ PRESCRIPTION : \&quot;includes\&quot;\n    TREATMENT ||--o{ ADMISSION_TREATMENT : \&quot;defines\&quot;\n    MEDICATION ||--o{ PRESCRIPTION : \&quot;specifies\&quot;&quot;,&#xa;  &quot;config&quot;: null,&#xa;  &quot;version&quot;: &quot;12&quot;&#xa;}" id="Vifu_0xf03QontH6H3n--1">
+          <mxCell connectable="0" parent="1" style="group;transparentBounds=1;editIcon=1;lockedGroup=0;groupPadding=10;" vertex="1">
+            <mxGeometry as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PATIENT" mermaidId="n:PATIENT" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FDF4FF;strokeColor=#E879F9;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="PATIENT" id="Vifu_0xf03QontH6H3n--2">
+          <mxCell parent="Vifu_0xf03QontH6H3n--1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FDF4FF;strokeColor=#E879F9;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="100" x="30" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ADMISSION" mermaidId="n:ADMISSION" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="ADMISSION" id="Vifu_0xf03QontH6H3n--3">
+          <mxCell parent="Vifu_0xf03QontH6H3n--1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F0FDFA;strokeColor=#2DD4BF;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="117" x="479" y="252" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="APPOINTMENT" mermaidId="n:APPOINTMENT" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="APPOINTMENT" id="Vifu_0xf03QontH6H3n--4">
+          <mxCell parent="Vifu_0xf03QontH6H3n--1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FFF7ED;strokeColor=#FB923C;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="135" x="33" y="252" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="STAFF" mermaidId="n:STAFF" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#ECFEFF;strokeColor=#22D3EE;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="STAFF" id="Vifu_0xf03QontH6H3n--5">
+          <mxCell parent="Vifu_0xf03QontH6H3n--1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#ECFEFF;strokeColor=#22D3EE;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="100" x="464" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="ADMISSION_TREATMENT" mermaidId="n:ADMISSION_TREATMENT" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#F0FDF4;strokeColor=#4ADE80;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="ADMISSION_TREATMENT" id="Vifu_0xf03QontH6H3n--6">
+          <mxCell parent="Vifu_0xf03QontH6H3n--1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#F0FDF4;strokeColor=#4ADE80;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="160" x="299" y="434" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="PRESCRIPTION" mermaidId="n:PRESCRIPTION" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F5F3FF;strokeColor=#A78BFA;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="PRESCRIPTION" id="Vifu_0xf03QontH6H3n--7">
+          <mxCell parent="Vifu_0xf03QontH6H3n--1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#F5F3FF;strokeColor=#A78BFA;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="137" x="602" y="434" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="DIAGNOSIS_GROUP" mermaidId="n:DIAGNOSIS_GROUP" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#FEF2F2;strokeColor=#F87171;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="DIAGNOSIS_GROUP" id="Vifu_0xf03QontH6H3n--8">
+          <mxCell parent="Vifu_0xf03QontH6H3n--1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;whiteSpace=wrap;spacingLeft=20;spacingRight=20;fillColor=#FEF2F2;strokeColor=#F87171;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="160" x="690" y="30" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="TREATMENT" mermaidId="n:TREATMENT" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEFCE8;strokeColor=#FACC15;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="TREATMENT" id="Vifu_0xf03QontH6H3n--9">
+          <mxCell parent="Vifu_0xf03QontH6H3n--1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#FEFCE8;strokeColor=#FACC15;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="117" x="322" y="252" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="MEDICATION" mermaidId="n:MEDICATION" mermaidBaseStyle="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=16;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#EEF2FF;strokeColor=#818CF8;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;" mermaidBaseValue="MEDICATION" id="Vifu_0xf03QontH6H3n--10">
+          <mxCell parent="Vifu_0xf03QontH6H3n--1" style="shape=table;startSize=81;container=1;collapsible=0;childLayout=tableLayout;fixedRows=1;rowLines=1;fontSize=14;fontFamily=Recursive;strokeWidth=2;align=center;resizeLast=1;html=1;fillColor=#EEF2FF;strokeColor=#818CF8;fontColor=#28253D;shadow=1;shadowColor=#000000;shadowOffsetX=4;shadowOffsetY=4;shadowBlur=0;shadowOpacity=6;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" vertex="1">
+            <mxGeometry height="81" width="123" x="760" y="252" as="geometry" />
+          </mxCell>
+        </UserObject>
+        <UserObject label="has" mermaidId="e:PATIENT-&gt;ADMISSION#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.63;exitY=1;entryX=0.29;entryY=0;" mermaidBaseValue="has" id="Vifu_0xf03QontH6H3n--11">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.63;exitY=1;entryX=0.29;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--3">
+            <mxGeometry relative="1" x="-0.7487377487377488" as="geometry">
+              <Array as="points">
+                <mxPoint x="93" y="232" />
+                <mxPoint x="514" y="232" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="books" mermaidId="e:PATIENT-&gt;APPOINTMENT#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.37;exitY=1;entryX=0.36;entryY=0;" mermaidBaseValue="books" id="Vifu_0xf03QontH6H3n--12">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.37;exitY=1;entryX=0.36;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--4">
+            <mxGeometry relative="1" x="-0.09518716577540132" as="geometry">
+              <Array as="points">
+                <mxPoint x="67" y="212" />
+                <mxPoint x="82" y="212" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="attends" mermaidId="e:STAFF-&gt;ADMISSION#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.58;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="attends" id="Vifu_0xf03QontH6H3n--13">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.58;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--3">
+            <mxGeometry relative="1" x="0.0728335991493887" as="geometry">
+              <Array as="points">
+                <mxPoint x="522" y="151" />
+                <mxPoint x="536" y="151" />
+                <mxPoint x="536" y="212" />
+                <mxPoint x="538" y="212" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="performs" mermaidId="e:STAFF-&gt;ADMISSION_TREATMENT#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.42;exitY=1;entryX=0.28;entryY=0;" mermaidBaseValue="performs" id="Vifu_0xf03QontH6H3n--14">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.42;exitY=1;entryX=0.28;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--6">
+            <mxGeometry relative="1" x="0.2420216068545884" as="geometry">
+              <Array as="points">
+                <mxPoint x="506" y="151" />
+                <mxPoint x="262" y="151" />
+                <mxPoint x="262" y="182" />
+                <mxPoint x="262" y="212" />
+                <mxPoint x="251" y="212" />
+                <mxPoint x="251" y="384" />
+                <mxPoint x="251" y="414" />
+                <mxPoint x="344" y="414" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="prescribes" mermaidId="e:STAFF-&gt;PRESCRIPTION#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.74;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="prescribes" id="Vifu_0xf03QontH6H3n--15">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.74;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--7">
+            <mxGeometry relative="1" x="0.291018840314615" as="geometry">
+              <Array as="points">
+                <mxPoint x="538" y="131" />
+                <mxPoint x="671" y="131" />
+                <mxPoint x="671" y="182" />
+                <mxPoint x="671" y="232" />
+                <mxPoint x="671" y="232" />
+                <mxPoint x="671" y="384" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="conducts" mermaidId="e:STAFF-&gt;APPOINTMENT#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.26;exitY=1;entryX=0.64;entryY=0;" mermaidBaseValue="conducts" id="Vifu_0xf03QontH6H3n--16">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.26;exitY=1;entryX=0.64;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--4">
+            <mxGeometry relative="1" x="0.5027714378871864" as="geometry">
+              <Array as="points">
+                <mxPoint x="490" y="131" />
+                <mxPoint x="176" y="131" />
+                <mxPoint x="176" y="212" />
+                <mxPoint x="120" y="212" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="categorises" mermaidId="e:DIAGNOSIS_GROUP-&gt;ADMISSION#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.71;entryY=0;" mermaidBaseValue="categorises" id="Vifu_0xf03QontH6H3n--17">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.71;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--3">
+            <mxGeometry relative="1" x="-0.5964221824686942" as="geometry">
+              <Array as="points">
+                <mxPoint x="770" y="212" />
+                <mxPoint x="562" y="212" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="receives" mermaidId="e:ADMISSION-&gt;ADMISSION_TREATMENT#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.72;entryY=0;" mermaidBaseValue="receives" id="Vifu_0xf03QontH6H3n--18">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.36;exitY=1;entryX=0.72;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--6">
+            <mxGeometry relative="1" x="-0.29585326953748026" as="geometry">
+              <Array as="points">
+                <mxPoint x="522" y="353" />
+                <mxPoint x="499" y="353" />
+                <mxPoint x="499" y="414" />
+                <mxPoint x="414" y="414" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="includes" mermaidId="e:ADMISSION-&gt;PRESCRIPTION#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.64;exitY=1;entryX=0.29;entryY=0;" mermaidBaseValue="includes" id="Vifu_0xf03QontH6H3n--19">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.64;exitY=1;entryX=0.29;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--7">
+            <mxGeometry relative="1" x="-0.21892967713401212" as="geometry">
+              <Array as="points">
+                <mxPoint x="554" y="353" />
+                <mxPoint x="577" y="353" />
+                <mxPoint x="577" y="414" />
+                <mxPoint x="641" y="414" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="defines" mermaidId="e:TREATMENT-&gt;ADMISSION_TREATMENT#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" mermaidBaseValue="defines" id="Vifu_0xf03QontH6H3n--20">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--6">
+            <mxGeometry relative="1" x="-0.021001615508885463" as="geometry">
+              <Array as="points">
+                <mxPoint x="381" y="414" />
+                <mxPoint x="379" y="414" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+        <UserObject label="specifies" mermaidId="e:MEDICATION-&gt;PRESCRIPTION#0" mermaidBaseStyle="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.71;entryY=0;" mermaidBaseValue="specifies" id="Vifu_0xf03QontH6H3n--21">
+          <mxCell edge="1" parent="Vifu_0xf03QontH6H3n--1" source="Vifu_0xf03QontH6H3n--10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;curved=0;startArrow=ERmandOne;startSize=14;endArrow=ERzeroToMany;endSize=14;jumpStyle=arc;jumpSize=12;strokeColor=#000000;strokeWidth=2;html=1;fontSize=14;labelBackgroundColor=#FFFFFF;fontFamily=Recursive;fontColor=#28253D;exitX=0.5;exitY=1;entryX=0.71;entryY=0;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DRecursive;" target="Vifu_0xf03QontH6H3n--7">
+            <mxGeometry relative="1" x="-0.547085201793722" as="geometry">
+              <Array as="points">
+                <mxPoint x="822" y="414" />
+                <mxPoint x="700" y="414" />
+              </Array>
+            </mxGeometry>
+          </mxCell>
+        </UserObject>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
